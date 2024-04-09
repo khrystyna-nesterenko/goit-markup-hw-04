@@ -50,6 +50,9 @@ img {
 
 .header {
         border-bottom: 1px solid #e7e9fc;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -87,6 +90,10 @@ img {
         color: #f4f4fd;
 }
 
+.nav-item {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-nav {
         font-weight: 500;
         font-size: 16px;
@@ -107,12 +114,15 @@ img {
         gap: 40px;
 }
 
+.address-item {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-contacts {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-        transition: color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts:hover, .header-contacts:focus, .header-nav:hover, .header-nav:focus {
@@ -145,7 +155,10 @@ img {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: auto;
+        background-size: cover;
+        max-width: 1440px;
+        padding: 188px 0;
+        margin: 0 auto;
 }
 
 .main-title {
@@ -184,6 +197,12 @@ img {
 /* ------------------------------------------------ */
 
 /* -----------------FEATURES------------------------------- */
+
+.features-section {
+        max-width: 1128px;
+        margin: auto;
+} 
+
 .visually-hidden {
         position: absolute;
         width: 1px;
@@ -214,13 +233,9 @@ img {
         height: 112px;
         background-color: #f4f4fd;
         margin-bottom: 8px;
-        position: relative;
-}
-
-.features-icons {
-        position: absolute;
-        top: 24px;
-        left: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 .features-title {
@@ -295,23 +310,31 @@ img {
 }
 
 .social-list-team {
-        background-color: #4D5AE5;
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-        position: relative;
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-team:hover, .social-list-team:focus {
+.social-link-team {
+        top: 12px;
+        left: 12px;
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.social-link-team:hover,
+.social-link-team:focus {
         background-color: #404BBF;
 }
 
-.social-link-team {
-        position: absolute;
-        top: 12px;
-        left: 12px;
+.social-icons-team {
+        fill: #f4f4fd;
 }
 
 /* ------------------------------------------------ */
@@ -331,12 +354,11 @@ img {
 
 .porfolio-list-item {
         width: calc((100% - 48px) / 3);
-        column-gap: 24px;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover {
-        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+.porfolio-list-item:hover {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .hover-text-wrapper {
@@ -358,10 +380,9 @@ img {
         background-color: #4d5ae5;
         transform: translateY(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
-.portfolio-list-item:hover .portfolio-hover-text {
+.porfolio-list-item:hover .portfolio-hover-text {
         transform: translateY(0);
 }
 
@@ -442,21 +463,29 @@ img {
 }
 
 .social-item-footer {
-        background-color: #4D5AE5;
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-        position: relative;
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item-footer:hover, .social-item-footer:focus {
+.social-link-footer {
+        top: 8px;
+        left: 8px;
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
         background-color: #31D0AA;
 }
 
-.social-link-footer {
-        position: absolute;
-        top: 8px;
-        left: 8px;
+.social-icons-footer {
+        fill: #f4f4fd;
 }

@@ -28,21 +28,23 @@
             >Web<span class="accent-header">Studio</span></a
           >
           <ul class="nav-list">
-            <li>
+            <li class="nav-item">
               <a class="header-nav current" href="./index.html">Studio</a>
             </li>
-            <li><a class="header-nav" href="">Portfolio</a></li>
-            <li><a class="header-nav" href="">Contacts</a></li>
+            <li class="nav-item">
+              <a class="header-nav" href="">Portfolio</a>
+            </li>
+            <li class="nav-item"><a class="header-nav" href="">Contacts</a></li>
           </ul>
         </nav>
         <address class="header-address">
           <ul class="address-list">
-            <li>
+            <li class="address-item">
               <a class="header-contacts" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="address-item">
               <a class="header-contacts" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -61,59 +63,57 @@
       </section>
 
       <section class="section features-section">
-        <div class="container">
-          <h2 class="visually-hidden">Features</h2>
-          <ul class="features-container-list">
-            <li class="features-list">
-              <div class="container-icon">
-                <svg class="features-icons" width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="features-title">Strategy</h3>
-              <p class="features-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
-            <li class="features-list">
-              <div class="container-icon">
-                <svg class="features-icons" width="64" height="64">
-                  <use href="./images/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="features-title">Punctuality</h3>
-              <p class="features-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-            <li class="features-list">
-              <div class="container-icon">
-                <svg class="features-icons" width="64" height="64">
-                  <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="features-title">Diligence</h3>
-              <p class="features-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="features-list">
-              <div class="container-icon">
-                <svg class="features-icons" width="64" height="64">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="features-title">Technologies</h3>
-              <p class="features-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
+        <h2 class="visually-hidden">Features</h2>
+        <ul class="features-container-list">
+          <li class="features-list">
+            <div class="container-icon">
+              <svg class="features-icons" width="64" height="64">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h3 class="features-title">Strategy</h3>
+            <p class="features-text">
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </li>
+          <li class="features-list">
+            <div class="container-icon">
+              <svg class="features-icons" width="64" height="64">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h3 class="features-title">Punctuality</h3>
+            <p class="features-text">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li class="features-list">
+            <div class="container-icon">
+              <svg class="features-icons" width="64" height="64">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h3 class="features-title">Diligence</h3>
+            <p class="features-text">
+              Research and confirm brands that present the strongest digital
+              growth opportunities and minimize risk.
+            </p>
+          </li>
+          <li class="features-list">
+            <div class="container-icon">
+              <svg class="features-icons" width="64" height="64">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="features-title">Technologies</h3>
+            <p class="features-text">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </li>
+        </ul>
       </section>
 
       <section class="section team-section">
@@ -316,13 +316,18 @@
               </div>
             </li>
             <li class="porfolio-list-item">
-              <div class="container-overlay">
+              <div class="hover-text-wrapper">
                 <img
                   src="./images/cash-2.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
                 />
+                <p class="portfolio-hover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
               </div>
               <div class="container-portfolio-np">
                 <h3 class="prtfolio-name">Cashless Payment</h3>
@@ -330,13 +335,18 @@
               </div>
             </li>
             <li class="porfolio-list-item">
-              <div class="container-overlay">
+              <div class="hover-text-wrapper">
                 <img
                   src="./images/mac-3.jpg"
                   alt="Macbook and phone"
                   width="360"
                   height="300"
                 />
+                <p class="portfolio-hover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
               </div>
               <div class="container-portfolio-np">
                 <h3 class="prtfolio-name">Meditation App</h3>
@@ -344,13 +354,18 @@
               </div>
             </li>
             <li class="porfolio-list-item">
-              <div class="container-overlay">
+              <div class="hover-text-wrapper">
                 <img
                   src="./images/taxi-4.jpg"
                   alt="Taxi"
                   width="360"
                   height="300"
                 />
+                <p class="portfolio-hover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
               </div>
               <div class="container-portfolio-np">
                 <h3 class="prtfolio-name">Taxi Service</h3>
@@ -358,13 +373,18 @@
               </div>
             </li>
             <li class="porfolio-list-item">
-              <div class="container-overlay">
+              <div class="hover-text-wrapper">
                 <img
                   src="./images/screen-5.jpg"
                   alt="Screen Illustration"
                   width="360"
                   height="300"
                 />
+                <p class="portfolio-hover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
               </div>
               <div class="container-portfolio-np">
                 <h3 class="prtfolio-name">Screen Illustrations</h3>
@@ -372,13 +392,18 @@
               </div>
             </li>
             <li class="porfolio-list-item">
-              <div class="container-overlay">
+              <div class="hover-text-wrapper">
                 <img
                   src="./images/course-6.jpg"
                   alt="Smiling woman in orange"
                   width="360"
                   height="300"
                 />
+                <p class="portfolio-hover-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
               </div>
               <div class="container-portfolio-np">
                 <h3 class="prtfolio-name">Online Courses</h3>
@@ -402,7 +427,7 @@
           </p>
         </div>
         <div class="footer-social-container">
-          <p class="footer-social-text"></p>
+          <p class="footer-social-text">Social media</p>
           <ul class="social-list-footer">
             <li class="social-item-footer">
               <a class="social-link-footer" href="">
